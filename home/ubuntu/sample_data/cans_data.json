@@ -1,0 +1,28 @@
+{
+  "cans": [
+    {
+      "product_name": "Kingfisher",
+      "category": "Beer",
+      "inventory_count": 100,
+      "unit": "330ml can"
+    },
+    {
+      "product_name": "Elephant",
+      "category": "Beer",
+      "inventory_count": 75,
+      "unit": "500ml can"
+    },
+    {
+      "product_name": "Tuborg",
+      "category": "Beer",
+      "inventory_count": 120,
+      "unit": "330ml can"
+    },
+    {
+      "product_name": "Budweiser",
+      "category": "Beer",
+      "inventory_count": 90,
+      "unit": "355ml can"
+    }
+  ]
+}
