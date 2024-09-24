@@ -1,0 +1,14 @@
+runtime: python39
+entrypoint: gunicorn -w 4 -k uvicorn.workers.UvicornWorker inventory_management.app:app
+env: flex
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 5
+  cool_down_period_sec: 180
+  cpu_utilization:
+    target_utilization: 0.6
+env_variables:
+  PYTHONUNBUFFERED: "True"
+  DEBUG: "False"
+  DATABASE_URL: "YOUR_DATABASE_URL_HERE"
+  SECRET_KEY: "YOUR_SECRET_KEY_HERE"
